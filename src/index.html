@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 设置缓存 -->
+    <!-- 设定网页的到期时间  -->
+    <meta http-equiv="Expires" content="-1">
+    <!-- 清除缓存（再访问这个网站要重新下载！） -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容，访问者将无法脱机浏览 -->
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <!-- author用于定义网页作者 -->
+    <meta name="author" content="aicoder.com">
+    <!-- 就是当点击网页添加至主屏幕功能时，会在主屏幕上生成一个图标。点击该图标会进入webapp功能。就是模拟本地应用的模式来浏览web页面。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 当启动webapp功能时，显示手机信号、时间、电池的顶部导航栏的颜色。默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）。这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 添加到主屏幕后，app全屏显示 -->
+    <meta content="yes" name="apple-touch-fullscreen" />
+
+    <!-- 默认设备会自动识别任何可能是电话和邮箱的字符串。设置telephone=no可以禁用这项功能。 -->
+    <meta content="telephone=no,email=no" name="format-detection" />
+
+    <!-- UC浏览器私有 -->
+    <!-- 全屏模式 -->
+    <meta name="full-screen" content="yes">
+    <!-- 应用模式 -->
+    <meta name="browsermode" content="application">
+
+    <!-- QQ浏览器私有 -->
+    <!-- 全屏模式 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- 应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+
+
+    <!-- iOS下页面启动加载时显示的画面图片，避免加载时的白屏。 -->
+    <!-- <link rel="apple-touch-startup-image" href="start.png" /> -->
+
+    <!-- 苹果为iOS设备配备了apple-touch-icon私有属性，添加该属性，在iPhone,iPad,iTouch的safari浏览器上可以使用添加到主屏按钮将网站添加到主屏幕上，方便用户以后访问。 -->
+    <!-- <link rel="apple-touch-icon" href="/custom_icon.png" /> -->
+    <!-- 系统会自动为apple-touch-icon图标添加圆角及高光。如果不想系统对图标添加效果，可以用apple-touch-icon-precomposed代替apple-touch-icon， -->
+    <!-- <link href="//gw.alicdn.com/tps/i2/TB1nmqyFFXXXXcQbFXXE5jB3XXX-114-114.png" rel="apple-touch-icon-precomposed"> -->
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.css" type="text/javascript">
+    <link rel="stylesheet" href="./lib/swiper/js/swiper.js" type="text/javascript">
+    <link rel="stylesheet" href="./font/font_shop/iconfont.css" type="text/javascript">
+    <title>youxuan</title>
+</head>
+
+<body>
+    <!-- 顶部搜索区 -->
+    <header class="container">
+        <div class="top-hd">
+            <div class="logo-wrap">
+
+            </div>
+            <div class="srch-wrap">
+                <input type="text" class="srch-text" id="srchTxt" placeholder="搜索优选商品/店铺">
+                <p id="btnSrch"></p>
+            </div>
+            <div class="msg-wrap">
+                <p></p>
+                <span>消息</span>
+            </div>
+        </div>
+
+    </header>
+    <!-- banner轮播图区域 -->
+    <div class="scroll-view">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper1"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper2"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper3"></div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+    <!-- 网站导航区 -->
+    <div class="site-nav-wrap">
+        <div class="layer-sep"></div>
+        <ul class="site-nav">
+            <li class="site-nav-item muyingping">
+                <a href="#">
+                    <i></i>
+                    <p></p>
+                    <span>母婴品</span>
+                </a>
+            </li>
+            <li class="site-nav-item chaoshigou">
+                <a href="#">
+                    <i></i>
+                    <p></p>
+                    <span>超市购</span>
+                </a>
+            </li>
+            <li class="site-nav-item miaoshapai">
+                <a href="#">
+                    <p></p>
+                    <span>秒杀拍</span>
+                </a>
+            </li>
+            <li class="site-nav-item yichongzhi">
+                <a href="#">
+                    <p></p>
+                    <span>易充值</span>
+                </a>
+            </li>
+        </ul>
+        <div class="layer-sep"></div>
+    </div>
+    <!-- 秒杀区 -->
+    <div class="ms">
+        <!-- 秒杀头部 -->
+        <div class="ms-hd">
+            <div class="ms-hd-l">
+                <i></i>
+                <span>秒杀</span>
+            </div>
+            <div class="ms-hd-r">
+                <span>更多</span>
+                <i></i>
+            </div>
+        </div>
+        <!-- 秒杀主体 -->
+        <div class="ms-bd-wrap">
+            <ul class="ms-bd">
+                <li class="ms-bd-item-1">
+                    <a href="#">
+                        <div></div>
+                    </a>
+                    <span></span>
+                    <i>￥0.01</i>
+
+                </li>
+                <li class="ms-bd-item-2">
+                    <a href="#">
+                        <div></div>
+                    </a>
+                    <span></span>
+                    <i>￥0.01</i>
+
+                </li>
+                <li class="ms-bd-item-3">
+                    <a href="#">
+                        <div></div>
+                    </a>
+                    <span></span>
+                    <i>￥0.01</i>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="layer-sep"></div>
+    </div>
+    <!-- 女装区 -->
+    <div class="nvzhuang">
+        <!-- 女装头部 -->
+        <div class="nz-hd">
+            <div class="nz-hd-l">
+                <i></i>
+                <span>女装</span>
+            </div>
+            <div class="nz-hd-r">
+                <span>更多</span>
+                <i></i>
+            </div>
+        </div>
+        <!-- 女装主体 -->
+        <div class="nz-bd-wrap">
+            <div class="nz-bd">
+                <div class="nz-bd-l">
+                    <a href="#"></a>
+                </div>
+                <div class="nz-bd-r">
+                    <a href="#">
+                        <p>
+                            <span class="aa">韩版小西装</span>
+                            <span class="bb">全场5折起</span>
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            <span class="aa">韩版小西装</span>
+                            <span class="bb">全场5折起</span>
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            <span class="aa">韩版小西装</span>
+                            <span class="bb">全场5折起</span>
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            <span class="aa">韩版小西装</span>
+                            <span class="bb">全场5折起</span>
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            <span class="aa">韩版小西装</span>
+                            <span class="bb">全场5折起</span>
+                        </p>
+                    </a>
+                    <a href="#">
+                        <p>
+                            <span class="aa">韩版小西装</span>
+                            <span class="bb">全场5折起</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="layer-sep"></div>
+    </div>
+    <!-- 运动区 -->
+
+    <div class="yundong">
+        <!-- 运动头部 -->
+        <div class="yd-hd">
+            <div class="yd-hd-l">
+                <i></i>
+                <span>运动</span>
+            </div>
+            <div class="yd-hd-r">
+                <span>更多</span>
+                <i></i>
+            </div>
+        </div>
+        <!-- 运动主体 -->
+        <div class="yd-bd-wrap">
+            <div class="yd-bd">
+                <div class="yd-bd-l">
+                    <a href="#"></a>
+                </div>
+                <div class="yd-bd-r">
+                    <div class="yd-bd-r-top">
+                        <a href="" class="yd-item-top-1"></a>
+                        <a href="" class="yd-item-top-2"></a>
+                    </div>
+                    <div class="yd-bd-r-bottom">
+                        <a href="" class="yd-item-bottom-1"></a>
+                        <a href="" class="yd-item-bottom-2"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer-sep"></div>
+    <!-- 底部导航栏 -->
+    <div class="bottom-nav">
+
+        <p class="bottom-shouye">
+            <a href=""><span>首页</span></a>
+        </p>
+        <p class="bottom-sousuo">
+            <a href=""><span>搜索</span></a>
+        </p>
+        <p class="bottom-fenlei">
+            <a href=""><span>分类</span></a>
+        </p>
+        <p class="bottom-gouwuche">
+            <a href=""><span>购物车</span></a>
+        </p>
+        <p class="bottom-wode">
+            <a href=""><span>我的</span></a>
+        </p>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

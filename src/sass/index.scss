@@ -1,0 +1,727 @@
+        // 头部导航
+        .top-hd {
+            display: flex;
+            padding: 0 11px;
+            background: linear-gradient(to right, #910757, #f71c5a); // 左侧logo区域
+            height: 38px;
+            // 左侧logo区
+            .logo-wrap {
+                background: url(../img/logo.png) no-repeat;
+                background-size: contain;
+                margin-top: 4px;
+                width: 32px;
+                height: 32px;
+            }
+            // 中间搜索区
+            .srch-wrap {
+                flex: 1; //自动缩放
+                height: 38px;
+                line-height: 38px;
+                padding-left: 5px;
+                padding-right: 25px;
+                position: relative;
+                .srch-text {
+                    width: 100%;
+                    height: 25px;
+                    outline: none;
+                    border: none;
+                    border-radius: 12px;
+                    font-size: 12px;
+                    padding-left: 1em;
+                }
+                p {
+                    background: url(../img/icon/放大镜.png) no-repeat;
+                    background-size: contain;
+                    font-size: 24px;
+                    height: 24px;
+                    width: 24px;
+                    position: absolute;
+                    right: 20px;
+                    top: 6px;
+                }
+            }
+            // 右侧消息区
+            .msg-wrap {
+                float: right;
+                width: 24px;
+                height: 33px;
+                position: relative;
+                p {
+                    height: 24px;
+                    background: url(../img/icon/消息.png) no-repeat;
+                    background-size: contain;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                span {
+                    font-size: 12px;
+                    line-height: 12px;
+                    position: absolute;
+                    top: 24px;
+                    left: 0;
+                    color: #fff;
+                }
+            }
+        }
+        
+        //  banner区域
+        .scroll-view {
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+            .swiper-container {
+                position: relative;
+                //  移动端1像素边框解决
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 200%;
+                    height: 200%;
+                    transform: scale(.5, .5);
+                    transform-origin: left top;
+                    border: 1px solid #beae8d;
+                    border-left: none;
+                    border-right: none;
+                    box-sizing: border-box;
+                }
+                .swiper-wrapper {
+                    .swiper-slide {
+                        div {
+                            width: 12.8rem;
+                            height: 4.8rem;
+                        }
+                    }
+                    // banner图片
+                    .swiper1 {
+                        background: url(../img/swiper1.png) no-repeat;
+                        background-size: cover;
+                        height: 1.2rem;
+                    }
+                    .swiper2 {
+                        background: url(../img/swiper2.png) no-repeat;
+                        background-size: cover;
+                        height: 1.2rem;
+                    }
+                    .swiper3 {
+                        background: url(../img/swiper3.png) no-repeat;
+                        background-size: cover;
+                        height: 1.2rem;
+                    }
+                }
+            }
+        }
+        
+        //  网站导航区
+        .site-nav {
+            display: flex;
+            justify-content: space-around;
+            height: 57px;
+            li {
+                line-height: 57px;
+            }
+            .muyingping {
+                padding-top: 6px;
+                p {
+                    width: 32px;
+                    height: 32px;
+                    background: url(../img/icon/母婴.png) no-repeat;
+                    background-size: 16px 16px;
+                    background-position: center;
+                    background-color: #7f47dd;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                span {
+                    position: relative;
+                    bottom: 17px;
+                    right: 1px;
+                }
+            }
+            .muyingping {
+                padding-top: 6px;
+                p {
+                    width: 32px;
+                    height: 32px;
+                    background: url(../img/icon/母婴.png) no-repeat;
+                    background-size: 16px 16px;
+                    background-position: center;
+                    background-color: #7f47dd;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                span {
+                    position: relative;
+                    bottom: 17px;
+                    right: 1px;
+                }
+            }
+            .chaoshigou {
+                padding-top: 6px;
+                p {
+                    width: 32px;
+                    height: 32px;
+                    background: url(../img/icon/超市.png) no-repeat;
+                    background-size: 16px 16px;
+                    background-position: center;
+                    background-color: #f32363;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                span {
+                    position: relative;
+                    bottom: 17px;
+                    right: 1px;
+                }
+            }
+            .miaoshapai {
+                padding-top: 6px;
+                p {
+                    width: 32px;
+                    height: 32px;
+                    background: url(../img/icon/秒杀拍.png) no-repeat;
+                    background-size: 16px 16px;
+                    background-position: center;
+                    background-color: #d6d623;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                span {
+                    position: relative;
+                    bottom: 17px;
+                    right: 1px;
+                }
+            }
+            .yichongzhi {
+                padding-top: 6px;
+                p {
+                    width: 32px;
+                    height: 32px;
+                    background: url(../img/icon/充值.png) no-repeat;
+                    background-size: 16px 16px;
+                    background-position: center;
+                    background-color: #ff8a2f;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+                span {
+                    position: relative;
+                    bottom: 17px;
+                    right: 1px;
+                }
+            }
+        }
+        
+        // 秒杀区
+        $ms-padding:11px;
+        $ms-main-color:#faaf0d;
+        .ms {
+            font-size: 12px;
+            background-color: #ffffff;
+            // 秒杀头部
+            .ms-hd {
+                height: 27px;
+                position: relative;
+                padding: 0 $ms-padding;
+                display: flex;
+                justify-content: space-between;
+                color: $ms-main-color;
+                &::before {
+                    position: absolute;
+                    left: $ms-padding;
+                    top: 0;
+                    content: "";
+                    width: 6px;
+                    height: 100%;
+                    background-color: $ms-main-color;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 200%;
+                    height: 200%;
+                    transform: scale(.5, .5);
+                    transform-origin: left top;
+                    border: 1px solid #beae8d;
+                    border-left: none;
+                    border-right: none;
+                    box-sizing: border-box;
+                }
+                .ms-hd-l {
+                    padding-left: 12px;
+                    padding-top: 6px;
+                    i {
+                        display: inline-block;
+                        height: 16px;
+                        width: 16px;
+                        background: url(../img/icon/秒杀.png) no-repeat;
+                        background-size: contain;
+                    }
+                    span {
+                        display: inline-block;
+                        margin-left: 6px;
+                        position: relative;
+                        bottom: 3px;
+                    }
+                }
+                .ms-hd-r {
+                    width: 50px;
+                    span {
+                        display: inline-block;
+                        position: relative;
+                        top: 4px;
+                    }
+                    i {
+                        display: inline-block;
+                        height: 16px;
+                        width: 16px;
+                        background: url(../img/icon/更多.png) no-repeat;
+                        background-size: contain;
+                        position: relative;
+                        top: 8px;
+                        background-color: $ms-main-color;
+                        border-radius: 1px;
+                    }
+                }
+            }
+            // 秒杀主体
+            .ms-bd-wrap {
+                height: 2rem;
+                padding: 0.12rem 0.22rem;
+                .ms-bd {
+                    display: flex;
+                    justify-content: space-around;
+                    .ms-bd-item-1 {
+                        a {
+                            display: block;
+                            width: 1.78rem;
+                            height: 1.78rem;
+                            background: url(../img/p1.png) no-repeat;
+                            background-size: cover;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 0.08rem;
+                            height: 0.16rem;
+                            width: 1.78rem;
+                            background: url(../img/sm.png) no-repeat;
+                            background-size: cover;
+                        }
+                        i {
+                            position: relative;
+                            left: 0.48rem;
+                            bottom: 0.25rem;
+                            background-color: #fff;
+                        }
+                    }
+                    .ms-bd-item-2 {
+                        a {
+                            display: block;
+                            width: 1.78rem;
+                            height: 1.78rem;
+                            background: url(../img/p2.png) no-repeat;
+                            background-size: cover;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 0.08rem;
+                            height: 0.16rem;
+                            width: 1.78rem;
+                            background: url(../img/sm.png) no-repeat;
+                            background-size: cover;
+                        }
+                        i {
+                            position: relative;
+                            left: 0.48rem;
+                            bottom: 0.25rem;
+                            background-color: #fff;
+                        }
+                    }
+                    .ms-bd-item-3 {
+                        a {
+                            display: block;
+                            width: 1.78rem;
+                            height: 1.78rem;
+                            background: url(../img/p3.png) no-repeat;
+                            background-size: cover;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 0.08rem;
+                            height: 0.16rem;
+                            width: 1.78rem;
+                            background: url(../img/sm.png) no-repeat;
+                            background-size: cover;
+                        }
+                        i {
+                            position: relative;
+                            left: 0.48rem;
+                            bottom: 0.25rem;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        
+        // 女装区域
+        // 女装头部
+        $nz-padding:11px;
+        $nz-main-color:#fa0d61;
+        .nz-hd {
+            background-color: #fff;
+            height: 34px;
+            position: relative;
+            padding: 0 0.23rem;
+            display: flex;
+            justify-content: space-between;
+            color: $nz-main-color;
+            &::before {
+                position: absolute;
+                left: $nz-padding;
+                top: 0;
+                content: "";
+                width: 6px;
+                height: 27px;
+                background-color: $nz-main-color;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 200%;
+                height: 200%;
+                transform: scale(.5, .5);
+                transform-origin: left top;
+                border: 1px solid #beae8d;
+                border-left: none;
+                border-right: none;
+                box-sizing: border-box;
+            }
+            .nz-hd-l {
+                padding-left: 12px;
+                padding-top: 6px;
+                i {
+                    display: inline-block;
+                    height: 16px;
+                    width: 16px;
+                    background: url(../img/icon/女装.png) no-repeat;
+                    background-size: contain;
+                }
+                span {
+                    display: inline-block;
+                    margin-left: 6px;
+                    position: relative;
+                    bottom: 3px;
+                }
+            }
+            .nz-hd-r {
+                width: 50px;
+                span {
+                    display: inline-block;
+                    position: relative;
+                    top: 4px;
+                }
+                i {
+                    display: inline-block;
+                    height: 16px;
+                    width: 16px;
+                    background: url(../img/icon/更多.png) no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    top: 8px;
+                    background-color: $nz-main-color;
+                    border-radius: 1px;
+                }
+            }
+        }
+        
+        // 女装主体
+        .nz-bd-wrap {
+            height: 2.45rem;
+            padding-left: 0.23rem;
+            padding-right: 0.23rem;
+            .nz-bd {
+                height: 2.45rem;
+                display: flex;
+                justify-content: space-between;
+                .nz-bd-l {
+                    width: 2rem;
+                    padding-left: 0.11rem;
+                    padding-right: 0.11rem;
+                    a {
+                        display: block;
+                        height: 2.28rem;
+                        width: 1.78rem;
+                        background: url(../img/女装/1.png) no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .nz-bd-r {
+                    width: 3.98rem;
+                    height: 2.28rem;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+                    a {
+                        width: 1.1rem;
+                        height: 1.02rem;
+                        display: block;
+                        background: url(../img/女装/2.png) no-repeat;
+                        background-size: cover;
+                        p {
+                            background-color: #eaece6;
+                            opacity: 0.7;
+                            height: 0.66rem;
+                            margin-top: 0.36rem;
+                        }
+                        .aa {
+                            display: inline-block;
+                            font-weight: bold;
+                            width: 1.1rem;
+                            font-size: 0.12rem;
+                            color: #3e3e3d;
+                            text-align: center;
+                        }
+                        .bb {
+                            display: inline-block;
+                            width: 1.1rem;
+                            font-weight: bold;
+                            font-size: 0.16rem;
+                            color: #fa0d61;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        
+        // 运动区
+        // 运动头部
+        $yd-padding:11px;
+        $yd-main-color:#f9a90f;
+        .yd-hd {
+            background-color: #fff;
+            height: 27px;
+            position: relative;
+            padding: 0 0.23rem;
+            display: flex;
+            justify-content: space-between;
+            color: $yd-main-color;
+            &::before {
+                position: absolute;
+                left: $yd-padding;
+                top: 0;
+                content: "";
+                width: 6px;
+                height: 27px;
+                background-color: $yd-main-color;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 200%;
+                height: 200%;
+                transform: scale(.5, .5);
+                transform-origin: left top;
+                border: 1px solid #beae8d;
+                border-left: none;
+                border-right: none;
+                box-sizing: border-box;
+            }
+            .yd-hd-l {
+                padding-left: 12px;
+                padding-top: 6px;
+                i {
+                    display: inline-block;
+                    height: 16px;
+                    width: 16px;
+                    background: url(../img/icon/运动.png) no-repeat;
+                    background-size: contain;
+                }
+                span {
+                    display: inline-block;
+                    margin-left: 6px;
+                    position: relative;
+                    bottom: 3px;
+                }
+            }
+            .yd-hd-r {
+                width: 50px;
+                span {
+                    display: inline-block;
+                    position: relative;
+                    top: 4px;
+                }
+                i {
+                    display: inline-block;
+                    height: 16px;
+                    width: 16px;
+                    background: url(../img/icon/更多.png) no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    top: 8px;
+                    background-color: $yd-main-color;
+                    border-radius: 1px;
+                }
+            }
+        }
+        
+        // 运动主体
+        .yd-bd-wrap {
+            height: 2.28rem;
+            padding: 0.12rem 0.22rem;
+            .yd-bd {
+                height: 2.28rem;
+                display: flex;
+                justify-content: space-between;
+                .yd-bd-l {
+                    width: 1.99rem;
+                    height: 2.28rem;
+                    padding-left: 0.1rem;
+                    padding-right: 0.1rem;
+                    a {
+                        display: block;
+                        width: 1.79rem;
+                        height: 2.29rem;
+                        background: url(../img/yd-l.png) no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .yd-bd-r {
+                    width: 3.99rem;
+                    height: 2.29rem;
+                    padding-left: 0.12rem;
+                    padding-right: 0.12rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .yd-bd-r-top {
+                        width: 3.79rem;
+                        height: 1.05rem;
+                        display: flex;
+                        justify-content: space-between;
+                        .yd-item-top-1 {
+                            display: block;
+                            width: 1.1rem;
+                            height: 1.05rem;
+                            background: url(../img/yd-r-2.png) no-repeat;
+                            background-size: contain;
+                        }
+                        .yd-item-top-2 {
+                            display: block;
+                            width: 2.40rem;
+                            height: 1.05rem;
+                            background: url(../img/yd-r-1.png) no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                    .yd-bd-r-bottom {
+                        width: 3.79rem;
+                        height: 1.05rem;
+                        display: flex;
+                        justify-content: space-between;
+                        .yd-item-bottom-1 {
+                            display: block;
+                            width: 2.40rem;
+                            height: 1.05rem;
+                            background: url(../img/yd-r-1.png) no-repeat;
+                            background-size: contain;
+                        }
+                        .yd-item-bottom-2 {
+                            display: block;
+                            width: 1.1rem;
+                            height: 1.05rem;
+                            background: url(../img/yd-r-2.png) no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+        
+        // 底部导航栏
+        .bottom-nav {
+            height: 0.86rem;
+            background-color: #171717;
+            display: flex;
+            justify-content: space-around;
+            .bottom-shouye {
+                display: block;
+                height: 0.53rem;
+                width: 0.53rem;
+                background: url(../img/icon/首页.png) no-repeat;
+                background-size: contain;
+                span {
+                    display: block;
+                    position: relative;
+                    top: 0.53rem;
+                    font-size: 0.15rem;
+                    left: 0.12rem;
+                    color: #ec1a5a;
+                }
+            }
+            .bottom-sousuo {
+                display: block;
+                height: 0.53rem;
+                width: 0.53rem;
+                background: url(../img/icon/搜索1.png) no-repeat;
+                background-size: contain;
+                span {
+                    display: block;
+                    position: relative;
+                    top: 0.53rem;
+                    font-size: 0.15rem;
+                    left: 0.12rem;
+                }
+            }
+            .bottom-fenlei {
+                display: block;
+                height: 0.53rem;
+                width: 0.53rem;
+                background: url(../img/icon/分类.png) no-repeat;
+                background-size: contain;
+                span {
+                    display: block;
+                    position: relative;
+                    top: 0.53rem;
+                    font-size: 0.15rem;
+                    left: 0.12rem;
+                }
+            }
+            .bottom-gouwuche {
+                display: block;
+                height: 0.53rem;
+                width: 0.53rem;
+                background: url(../img/icon/购物车.png) no-repeat;
+                background-size: contain;
+                span {
+                    display: block;
+                    position: relative;
+                    top: 0.53rem;
+                    font-size: 0.15rem;
+                    left: 0.04rem;
+                    text-align: center;
+                }
+            }
+            .bottom-wode {
+                display: block;
+                height: 0.53rem;
+                width: 0.53rem;
+                background: url(../img/icon/我的.png) no-repeat;
+                background-size: contain;
+                span {
+                    display: block;
+                    position: relative;
+                    top: 0.53rem;
+                    font-size: 0.15rem;
+                    left: 0.12rem;
+                }
+            }
+        }
